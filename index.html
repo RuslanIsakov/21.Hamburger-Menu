@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hamburger Menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='menu'>
+  <span class='toggle'>
+    <i></i>
+    <i></i>
+    <i></i>
+  </span>
+  <div class='menuContent'>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Gallery</li>
+      <li>Team</li>
+      <li>Contacts</li>
+    </ul>
+  </div>
+</div>
+ 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+<script>
+    $('.toggle').on('click', function() {
+	$('.menu').toggleClass('active');
+});
+    
+</script>
+</body>
+</html>
